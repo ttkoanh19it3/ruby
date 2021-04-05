@@ -1,0 +1,42 @@
+<%= form_with(model: nhaxuatban) do |form| %>
+  <% if nhaxuatban.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(nhaxuatban.errors.count, "error") %> prohibited this nhaxuatban from being saved:</h2>
+
+      <ul>
+        <% nhaxuatban.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :maNXB %>
+    <%= form.text_field :maNXB %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ten_NXB %>
+    <%= form.text_field :ten_NXB %>
+  </div>
+
+  <div class="field">
+    <%= form.label :diachi %>
+    <%= form.text_field :diachi %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :thongtin %>
+    <%= form.text_field :thongtin %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ma_sach: MyString
+  ten_sach: MyString
+  mtg: MyString
+  mtl: MyString
+  maNXB: MyString
+  nxb: 1
+
+two:
+  ma_sach: MyString
+  ten_sach: MyString
+  mtg: MyString
+  mtl: MyString
+  maNXB: MyString
+  nxb: 1

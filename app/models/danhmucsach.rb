@@ -1,0 +1,2 @@
+class Danhmucsach < ApplicationRecord
+end

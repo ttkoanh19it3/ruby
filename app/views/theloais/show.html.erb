@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ma theloai:</strong>
+  <%= @theloai.ma_theloai %>
+</p>
+
+<p>
+  <strong>Ten theloai:</strong>
+  <%= @theloai.ten_theloai %>
+</p>
+
+<%= link_to 'Edit', edit_theloai_path(@theloai) %> |
+<%= link_to 'Back', theloais_path %>

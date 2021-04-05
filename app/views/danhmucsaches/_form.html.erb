@@ -1,0 +1,47 @@
+<%= form_with(model: danhmucsach) do |form| %>
+  <% if danhmucsach.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(danhmucsach.errors.count, "error") %> prohibited this danhmucsach from being saved:</h2>
+
+      <ul>
+        <% danhmucsach.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :ma_sach %>
+    <%= form.text_field :ma_sach %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ten_sach %>
+    <%= form.text_field :ten_sach %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mtg %>
+    <%= form.text_field :mtg %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mtl %>
+    <%= form.text_field :mtl %>
+  </div>
+
+  <div class="field">
+    <%= form.label :maNXB %>
+    <%= form.text_field :maNXB %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nxb %>
+    <%= form.number_field :nxb %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
